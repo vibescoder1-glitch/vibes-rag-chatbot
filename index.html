@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vibes Components RAG Chatbot</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="demo-shell">
+    <section class="demo-card">
+      <div class="demo-pill">Vibes Components • RAG Assistant</div>
+      <h1>Grounded product and company answers for website visitors.</h1>
+      <p>This standalone chatbot retrieves relevant Vibes Components knowledge, generates a grounded response, and returns the source pages used for the answer. The production widget can be embedded into the existing company website with one script tag.</p>
+      <div class="demo-actions">
+        <a class="demo-pill" href="/widget.html">Open chatbot demo</a>
+        <a class="demo-pill" href="/api/health">Check API health</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    window.VibesChatbotConfig = { title: 'Vibes Assistant', position: 'bottom-right' };
+  </script>
+  <script src="/widget.js" defer></script>
+</body>
+</html>

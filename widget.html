@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <title>Vibes Assistant</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <main class="chat" aria-label="Vibes Components chatbot">
+    <header class="chat-header">
+      <div class="brand-mark">V</div>
+      <div>
+        <div class="chat-title">Vibes Assistant</div>
+        <div class="chat-subtitle">Products • Engineering • EV solutions</div>
+      </div>
+    </header>
+    <section id="messages" class="messages" aria-live="polite"></section>
+    <div class="quick" id="quickPrompts">
+      <button data-q="What products do you manufacture?">Products</button>
+      <button type="button" data-q="What EV battery and charger components do you manufacture?">
+        EV solutions
+      </button>
+      <button data-q="What elastomer materials do you work with?">Materials</button>
+      <button type="button" data-action="quotation">
+        Quotation
+      </button>
+    </div>
+    <div id="status" class="status"></div>
+    <form id="form" class="composer">
+      <textarea id="input" rows="1" maxlength="2000" placeholder="Ask about Vibes Components…"
+        aria-label="Your message"></textarea>
+      <button id="send" class="send" type="submit" aria-label="Send">➜</button>
+    </form>
+  </main>
+  <script src="/app.js"></script>
+</body>
+
+</html>

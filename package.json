@@ -1,0 +1,17 @@
+{
+  "name": "vibes-rag-chatbot",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Gemini-powered hybrid RAG chatbot for Vibes Components with embeddable website widget",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch server.mjs",
+    "start": "node server.mjs",
+    "ingest": "node scripts/ingest.mjs",
+    "ingest:seed": "node scripts/ingest.mjs --seed",
+    "test": "node --test"
+  }
+}
